@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>UAV Redesign - Santiago Rodriguez Gonzalez</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h1>UAV Redesign for Agricultural Monitoring</h1>
+                    <p><strong>Skills gained:</strong> CAD Design (SolidWorks), CFD & FEA Simulation (ANSYS, MATLAB), Embedded Systems & Avionics (ArduPilot, IMU, Arduino), Manufacturing Preparation (STEP)</p>
+                </header>
+
+                <p>
+                    This project was developed in partnership with OTECH, focusing on the comprehensive redesign and structural optimization of an agricultural monitoring UAV. The main objective was to achieve a 10% weight reduction while rigorously maintaining structural integrity, flight stability, and aerodynamic performance standards.
+                </p>
+
+                <!-- Foto 1: Vista general del UAV (por ejemplo, UAV.png o UAV_main.png) -->
+                <span class="image main"><img src="images/UAV_general.jpg" alt="UAV General View" /></span>
+
+                <p>
+                    A critical engineering challenge early in development arose from file compatibility issues: the initial aircraft files were provided in a legacy format that could not be modified directly in SolidWorks. To overcome this limitation, principles of reverse engineering were applied to manually model every single component of the fuselage in individual parts, culminating in a complete multi-part assembly.
+                </p>
+
+                <!-- Foto 2: Aquí puedes poner una captura de SolidWorks o del modelo CAD por partes -->
+                <span class="image main"><img src="images/UAV_CAD.jpg" alt="SolidWorks CAD Assembly" /></span>
+                <span class="image main"><img src="images/UAV_Fluid.jpg" alt="Aerodynamic performance" /></span>
+
+                <p>
+                    Once the complete assembly was validated and optimized, the files were prepared and exported into STEP formats, enabling smooth translation for rapid prototyping and manufacturing processes. Aerodynamic lift and center of gravity calculations were meticulously verified through MATLAB and CFD simulations in ANSYS to guarantee optimal flight stability.
+                </p>
+
+                <p>
+                    From an electronics and control perspective, the project integrated the avionics architecture, connecting the main power battery, electronic speed controllers (drivers), and actuators. Using an ArduPilot flight controller equipped with an onboard inertial measurement unit, the system was successfully calibrated so that the aircraft's avionics actively responded to physical motion and attitude changes.
+                </p>
+
+                <!-- Foto 3: Aquí puedes poner una foto de la circuitería, la aviónica o el banco de pruebas -->
+                <span class="image main"><img src="images/UAV_Avionics.jpg" alt="Avionics and ArduPilot Integration" /></span>
+
+                <p>
+                    The successful completion of this redesign demonstrated a robust synergy between advanced CAD modeling, aerodynamic simulation, and embedded hardware integration, delivering a flight-ready platform adapted for high-efficiency agricultural operations.
+                </p>
+
+                <ul class="actions special">
+                    <li><a href="index.html" class="button large">Back to Projects</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div id="copyright">
+                <ul>
+                    <li>&copy; Santiago Rodriguez Gonzalez</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

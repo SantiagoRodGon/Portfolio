@@ -1,0 +1,101 @@
+!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Interactive Cell - Santiago Rodriguez Gonzalez</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h1>Industrial Automation Training Cell</h1>
+                    <p><strong>Skills gained:</strong> PLC Programming (TIA Portal), RFID programming (Arduino, C), CAD
+                        Design
+                        (SolidWorks)</p>
+                </header>
+
+                <p>
+                    In the interactive cell, a non-invasive current sensing system for the Lathe machine (ROMI T240)
+                    using an SCT-013 sensor was implemented. The sensor detects current via the Hall effect and feeds
+                    the signal to an
+                    ESP32 microcontroller. I developed the analog signal processing circuit, including a voltage
+                    divider, filtering capacitor, and voltage follower, ensuring the signal was safely and accurately
+                    read by the ESP32.
+
+                    Additionally, I programmed the ESP32 to read the current in real time, compute the RMS value, and
+                    transmit the data to a Node-RED dashboard via MQTT. This system allows monitoring of amperage,
+                    average power consumption, and graphical visualization of current over time.
+                </p>
+
+                <span class="image main"><img src="images/currentCell.png" alt="Electric Wheelchair" /></span>
+
+                <p>
+                    An RFID-based system access system was implemented by using an ESP32 and the MFRC522 module. This
+                    system identifies users and grants different levels of access based on pre-registered IDs. The ESP32
+                    publishes the access data to an MQTT broker, which is then visualized in the Node-RED dashboard.
+                    Unauthorized users are denied access, and login/logout operations are logged for tracking.
+                </p>
+
+                <span class="image main"><img src="images/RFIDCell.png" alt="Electric Wheelchair" /></span>
+
+                <p>
+                    I programmed the automation routines for the manufacturing cell, enabling safe and efficient
+                    operation of tasks such as stamping, drilling, milling, and pressing. This logic ensures
+                    synchronization between stations, communicates with the Siemens S7-1200 PLC via PROFINET and MODBUS
+                    protocols, and provides operators with real-time control through HMI dashboards. The programming
+                    also integrates sensor feedback and coordinates the collaborative UR robot to handle part transport
+                    and post-processing tasks, optimizing production flow and minimizing errors.
+                </p>
+
+                <p>
+                    This work provided hands-on experience in industrial automation principles, control logic, and
+                    system monitoring, contributing to a fully functional and interactive training environment.
+                </p>
+
+                <span class="image main"><img src="images/InteractiveCell.jpg" alt="Electric Wheelchair" /></span>
+
+                <ul class="actions special">
+
+                    <li><a href="index.html" class="button large">Back to Projects</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div id="copyright">
+                <ul>
+                    <li>&copy; Santiago Rodriguez Gonzalez</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

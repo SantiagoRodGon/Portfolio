@@ -1,0 +1,109 @@
+!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>CRIQ - Santiago Rodriguez Gonzalez</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h1>Remote Robotic Manipulator</h1>
+                    <p><strong>Skills gained:</strong> Electronics (Proteus 8 Professional), microcontroller programming
+                        (MPLAB),
+                        Programming (Arduino, C), and user-centered design (SolidWorks)
+                        (SolidWorks)</p>
+                </header>
+
+                <p>
+                    This project describes the design and development of an assistive mechatronic system aimed at
+                    supporting a 9-year-old patient at the Centro de Rehabilitación Integral de Querétaro (CRIQ). The
+                    system consists of a miniature robot controlled remotely, equipped with a robotic arm and a claw,
+                    designed to facilitate everyday tasks and promote the patient’s independence.
+                </p>
+
+                <span class="image main"><img src="images/CRIQ.png" alt="Electric Wheelchair" /></span>
+
+                <p>
+                    The design integrates sensors, actuators, and microcontrollers, applying principles of industrial
+                    automation and control logic. From an electronics perspective, the system uses joysticks as input
+                    devices and an LCD screen as a human-machine interface, all managed by a PIC18F4550 microcontroller.
+                    To ensure precision and reliability, the joystick signals are conditioned using operational
+                    amplifiers and window comparators.
+                </p>
+
+                <p>
+                    Control is organized into operation modes to handle either the robotic arm or the robot’s wheels,
+                    allowing the patient to interact simply and effectively. The controller was designed with comfort
+                    and accessibility in mind, featuring a box-like structure that can rest on the patient’s legs and
+                    joysticks without hard-to-press buttons.
+                </p>
+
+                <span class="image main"><img src="images/Control.png" alt="Electric Wheelchair" /></span>
+
+                <p>
+                    The actuators include four DC motors for mobility and three MG90S servomotors for the arm and claw,
+                    with movement limits set to prevent damage. The microcontroller communicates via Bluetooth with an
+                    Arduino that controls the actuators, while the LCD provides real-time feedback on the selected mode
+                    and direction.
+
+                    During development, hardware challenges were addressed, such as signal instability in the
+                    comparators and overstrain in the claw servomotors. Physical tests were conducted, and a soldered
+                    circuit board was implemented to improve system reliability.
+                </p>
+
+                <span class="image main"><img src="images/circuit.png" alt="Electric Wheelchair" /></span>
+
+                <p>
+                    The project demonstrated that it is possible to integrate electronics, control systems, and
+                    mechanical design to create customized assistive solutions. The patient successfully interacted with
+                    the robot, showing the system’s effectiveness as a support tool for children with motor
+                    disabilities.
+                </p>
+
+
+                <ul class="actions special">
+
+                    <li><a href="index.html" class="button large">Back to Projects</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div id="copyright">
+                <ul>
+                    <li>&copy; Santiago Rodriguez Gonzalez</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
